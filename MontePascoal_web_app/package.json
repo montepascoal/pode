@@ -1,0 +1,56 @@
+{
+  "name": "pode-web-app",
+  "version": "0.1.19",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --coverage --watchAll",
+    "server": "json-server db.json -p 3333",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.3",
+    "axios": "^0.21.1",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.25.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^12.0.4",
+    "react-hook-form": "^7.20.4",
+    "react-icons": "^4.2.0",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "react-native-web": "^0.16.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-tabulator": "^0.14.8",
+    "react-toastify": "^7.0.4",
+    "styled-components": "^5.3.0",
+    "styled-components-native-esm": "^5.1.2",
+    "styled-query": "^1.0.1",
+    "use-react-router-breadcrumbs": "2.0.2",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.11"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/styled-components": "^5.1.9",
+    "json-server": "^0.16.3",
+    "react-test-renderer": "^17.0.2"
+  }
+}

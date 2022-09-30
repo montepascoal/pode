@@ -1,0 +1,25 @@
+# Instituto Monte Pascoal - 000067
+
+## **Review**
+## Data: 17/02/22 
+## System: web-app
+
+***
+
+> ## Módulo: CONFIG 
+> ## Módulo: CONFIG - EMPRESA
+
+### Trello
+https://trello.com/c/uaDVv45f/293-empresas  
+
+### Relatório  
+Foi feito uma revisão de todo o código para o componente e pagina em questão.  
+
+<!-- O resultado foi que o componente foi **APROVADO** e o mesmo será movido para "Revisão Aprovada* e entrará em produção no proximo deploy.   -->
+
+O resultado foi que a revisão foi **REPROVADA**, sendo necessário alguns ajustes para conclusão.
+
+Segue a lista dos ajustes necessários:
+
+- **Edição**
+  - O sistema está permitindo salvar um registro de EMPRESA mesmo com CNPJ inválido (Error-01)

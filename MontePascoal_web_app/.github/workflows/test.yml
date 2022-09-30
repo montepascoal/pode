@@ -1,0 +1,25 @@
+name: build
+
+on:
+  push:
+    branches: 
+      - test
+
+jobs:
+  tests:
+    name: DEV Tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.4
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.17.4'
+    - name: Install dependencies
+      run: yarn
+      env:
+        CI: true
+    - name: Run tests
+      run: yarn test --watchAll false # executa uma vez e não fica ouvindo e esperando novas alterações
+      env:
+        CI: true

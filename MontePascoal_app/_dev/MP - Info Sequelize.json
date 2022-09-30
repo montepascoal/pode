@@ -1,0 +1,50 @@
+Criar Migrations
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+joom.com
+npx sequelize db:migrate
+
+npx sequelize db:migrate:undo
+npx sequelize db:migrate:undo:all
+
+
+SET DEBUG=mp:* & npm start
+SET NODE_ENV=0 & npm start
+
+
+==>
+SET DEBUG=pazuniversal:* & nodemon start
+SET NODE_ENV=0 & nodemon start
+
+npx sequelize-cli seed:generate --name seed-locales
+
+npx sequelize db:seed:all
+npx sequelize db:seed:undo:all
+
+
+npx sequelize db:migrate:undo:all
+npx sequelize db:migrate
+npx sequelize db:seed:all
+
+==========================
+1
+npx sequelize migration:create --name=create-clients-members-files
+
+2
+npx sequelize seed:generate --name seed-clients-members-files
+
+3
+Create Model
+npx sequelize model:generate --name providers --attributes userId:INTEGER,workingDayId:INTEGER
+
+[app] [dev] [db] Users
+Created migrations, seeders, model, controller and routes
+
+alias mp-locale="cd /mnt/c/projects/montepascoal/app/MontePascoal-System/app"
+alias mp-db="npx sequelize db:migrate:undo:all && npx sequelize db:migrate && npx sequelize db:seed:all"
+alias mp-files-rm="rm /mnt/c/projects/montepascoal/app/MontePascoal-System/app/files/uploads/!(.gitignore|.gitkeep|7fc723597020ec6342f9ea4b2b8ed449496985e3886948008c153df52b84.jpeg|14fa03362f9c3051285d4d1ca3d6d754688e22db0ae12d54e2e7ed641305.pdf)"
+alias mp-logs-rm="rm /mnt/c/projects/montepascoal/app/MontePascoal-System/app/logs/!(.gitignore|.gitkeep)"
+
+============================================
+
+Save "pgadmin4" => "F6"

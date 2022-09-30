@@ -1,0 +1,91 @@
+.Container {
+  display: flex;
+  align-items: center;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.TitleAlert {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Toastify__toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+}
+
+.Toastify__toast {
+  display: inline-flex;
+  color: var(--text);
+  border-radius: 10px;
+}
+
+.Toastify__toast svg {
+  font-size: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+.Toastify__toast--success {
+  background: #EAFEF3;
+  border: 2px solid var(--success);
+  box-shadow: 0 1px 10px 0 var(--success), 0 0 1px 0 var(--success);
+}
+
+.Toastify__toast--success svg {
+  color: var(--success);
+}
+
+.Toastify__toast--error {
+  background: #FDF3F2;
+  border: 2px solid var(--error);
+  box-shadow: 0 1px 10px 0 var(--error), 0 0 1px 0 var(--error);
+}
+
+.Toastify__toast--error svg {
+  color: var(--error);
+}
+
+.Toastify__toast--warning {
+  background: #FFF8EB;
+  border: 2px solid var(--warnings);
+  box-shadow: 0 1px 10px 0 var(--warnings), 0 0 1px 0 var(--warnings);
+}
+
+.Toastify__toast--warning svg {
+  color: var(--warnings);
+}
+
+.Toastify__close-button {
+  margin-top: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .Wrapper {
+    flex-direction: column;
+  }
+  
+  .TitleAlert {
+    margin-bottom: 5px;
+  }
+  
+
+  .Toastify__toast-container {
+    padding: 15px;
+  }
+
+  .Toastify__toast {
+    margin-bottom: 15px;
+  }
+}

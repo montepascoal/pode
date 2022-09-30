@@ -1,0 +1,77 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, DataTypes) => {
+    return queryInterface.bulkInsert("COMPANIES",
+      [
+        {
+          comStatus: true,
+          comName: "[deltta] Nome Fantasia",
+          comNameCompany: "[deltta] Razão Social",
+          comCnpj: "00000000000000",
+          comRegistrationState: "11111",
+          comRegistrationMunicipal: "2222222222",
+          comAddCep: "74465445",
+          comAddAddress: "Rua Tal",
+          comAddComplement: "Quadra Tal Lote Tal",
+          comAddNumber: "1234",
+          comAddDistrict: "Bairro Tal",
+          comAddCouId: 1,
+          comAddStaId: 9,
+          comAddCitId: 977,
+          comConPhone1: "62900000000",
+          comConPhone2: "6230000000",
+          comConEmail: "deltta@deltta.com",
+          comObservations: "Obs test",
+          comCreated: new Date(),
+          comUpdated: new Date(),
+          comDeleted: null,
+        },
+        {
+          comStatus: true,
+          comName: "[deltta] Test 2",
+          comNameCompany: "[deltta] Test 2",
+          comCnpj: "00000000000001",
+          comAddCep: "74000000",
+          comAddAddress: "Rua Xis",
+          comAddComplement: "Quadra Dis Lote Nis",
+          comAddNumber: null,
+          comAddDistrict: "Bairro Biz",
+          comAddCouId: 1,
+          comAddStaId: 9,
+          comAddCitId: 977,
+          comConPhone1: "62911111111",
+          comConEmail: "test2@deltta.com",
+          comCreated: new Date(),
+          comUpdated: new Date(),
+          comDeleted: null,
+        },
+        {
+          comStatus: true,
+          comName: "[deltta] Test 3",
+          comNameCompany: "[deltta] Test 3",
+          comCnpj: "11111111111111",
+          comRegistrationState: "11111",
+          comAddCep: "74888444",
+          comAddAddress: "Rua A Quadra B Lote B",
+          comAddComplement: null,
+          comAddNumber: null,
+          comAddDistrict: "Bairro B",
+          comAddCouId: 1,
+          comAddStaId: 9,
+          comAddCitId: 901,
+          comConPhone1: "62911111111",
+          comConEmail: "test3@deltta.com",
+          comObservations: "Obs test 3",
+          comCreated: new Date(),
+          comUpdated: new Date(),
+          comDeleted: null,
+        }
+      ],
+      {}
+    );
+  },
+  down: (queryInterface, DataTypes) => {
+    return queryInterface.bulkDelete("COMPANIES", null, {});
+  },
+};

@@ -1,0 +1,12 @@
+version: "3" ## especifica a versão do docker-compose file
+
+services: ## Define um serviço
+  app: ## nome do serviço
+    image: system/montepascoal_system
+    # build: . ## localização do dockerfile
+    # command: yarn start ## comando a executar
+    ports:
+      - "4031:4031" ## redirecionamento de porta quando chegar alguma requisição na porta 4010 chama o container na porta 4010
+    volumes:
+      - /database/MontePascoalFiles_prod/files:/usr/app/files/ ## monitoro a pasta atual . e envio as alterações para /usr/app
+      - /database/MontePascoalFiles_prod/logs:/usr/app/logs/ ## monitoro a pasta atual . e envio as alterações para /usr/app

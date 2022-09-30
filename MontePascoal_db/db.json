@@ -1,0 +1,215 @@
+{
+  "system": {
+    "name": "Monte Pascoal",
+    "phone_1": "0800 606 9900",
+    "phone_2": "4007-2248",
+    "link_facebook": "http://www.facebook.com/imontepascoal",
+    "link_instagram": "http://www.instagram.com/imontepascoal",
+    "link_whatsapp": "https://api.whatsapp.com/send?phone=5562998610001",
+    "link_tiktok": "https://www.tiktok.com/en/",
+    "link_website": "https://www.imontepascoal.com"
+  },
+  "companies-main": [
+    {
+      "id": 1,
+      "comStatus": true,
+      "comName": "Nome Fantasia 01",
+      "comNameCompany": "Razão Social 01",
+      "comCnpj": "00000000000000",
+      "comRegistrationState": "11111",
+      "comRegistrationMunicipal": "2222222222",
+      "comAddCep": "74465445",
+      "comAddAddress": "Rua Tal",
+      "comAddComplement": "Quadra Tal Lote Tal",
+      "comAddNumber": "1234",
+      "comAddDistrict": "Bairro Tal",
+      "comAddCouId": 1,
+      "comAddStaId": 9,
+      "comAddCitId": 977,
+      "comConPhone1": "62900000000",
+      "comConPhone2": "6230000000",
+      "comConEmail": "deltta@deltta.com",
+      "comConMediaWebsite": "https://www.imontepascoal.com",
+      "comConMediaWhatsApp": "https://api.whatsapp.com/send?phone=5562998610001",
+      "comConMediaFacebook": "http://www.facebook.com/imontepascoal",
+      "comConMediaInstagram": "http://www.instagram.com/imontepascoal",
+      "comConMediaTikTok": "https://www.tiktok.com/en/",
+      "comObservations": "Obs test",
+      "comCreated": "2021-11-05 10:22:34",
+      "comUpdated": "2021-11-05 10:22:34",
+      "comDeleted": null
+    },
+    {
+      "id": 2,
+      "comStatus": true,
+      "comName": "Nome Fantasia 02",
+      "comNameCompany": "Razão Social 02",
+      "comCnpj": "00000000000000",
+      "comRegistrationState": "11111",
+      "comRegistrationMunicipal": "2222222222",
+      "comAddCep": "74465445",
+      "comAddAddress": "Rua Tal",
+      "comAddComplement": "Quadra Tal Lote Tal",
+      "comAddNumber": "1234",
+      "comAddDistrict": "Bairro Tal",
+      "comAddCouId": 1,
+      "comAddStaId": 9,
+      "comAddCitId": 977,
+      "comConPhone1": "62900000000",
+      "comConPhone2": "6230000000",
+      "comConEmail": "deltta@deltta.com",
+      "comConMediaWebsite": "https://www.imontepascoal.com",
+      "comConMediaWhatsApp": "https://api.whatsapp.com/send?phone=5562998610001",
+      "comConMediaFacebook": "http://www.facebook.com/imontepascoal",
+      "comConMediaInstagram": "http://www.instagram.com/imontepascoal",
+      "comConMediaTikTok": "https://www.tiktok.com/en/",
+      "comObservations": "Obs test",
+      "comCreated": "2021-11-05 10:22:34",
+      "comUpdated": "2021-11-05 10:22:34",
+      "comDeleted": null
+    }
+  ],
+  "login": {
+    "id": 1,
+    "cpf": "70510274170",
+    "password": "12345678"
+  },
+  "reset": {
+    "id": 1,
+    "password": "123456"
+  },
+  "auth": {
+    "id": 1,
+    "username": "Colaborador",
+    "email": "colaborador@test.com",
+    "cpf": "70510274170",
+    "avatar": null
+  },
+  "slides": [
+    {
+      "id": 1,
+      "title": "Slide 1",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-1.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-1.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Slide 2",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-2.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-2.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Slide 3",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-1.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-1.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Slide 4",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-2.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-2.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Slide 5",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-1.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-1.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Slide 6",
+      "imgDesktop": "https://delttatecnologia.com.br/slides-pascoal/desktop-2.jpg",
+      "imgTablet": "https://delttatecnologia.com.br/slides-pascoal/tablet-2.jpg",
+      "imgMobile": "https://delttatecnologia.com.br/slides-pascoal/mobile-2.jpg"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Where does it come from?",
+      "resume": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "text": "<div><h2>What is Lorem Ipsum?</h2><p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry.</p></div><br>",
+      "author": "@minsaudestetica",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 2,
+      "title": "Why do we use it?",
+      "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of us.",
+      "text": "<h2>Why do we use it?</h2><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>",
+      "author": "@minengenharia",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 3,
+      "title": "What is Lorem Ipsum?",
+      "resume": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "text": "<h2>What is Lorem Ipsum?</h2><p><strong>Lorem Ipsum</strong> is simply dummy text of t</p>",
+      "author": "@minbiomedicina",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 4,
+      "title": "Where does it come from?",
+      "resume": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "text": "<div><h2>What is Lorem Ipsum?</h2><p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem.</p></div><br>",
+      "author": "@minsaudestetica",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 5,
+      "title": "Why do we use it?",
+      "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "text": "<h2>Why do we use it?</h2><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>",
+      "author": "@minengenharia",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 6,
+      "title": "What is Lorem Ipsum?",
+      "resume": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "text": "<h2>What is Lorem Ipsum?</h2><p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+      "author": "@minbiomedicina",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 7,
+      "title": "Why do we use it?",
+      "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "text": "<h2>Why do we use it?</h2><p>It is a long established fact that a reader will be distracted by the re.</p>",
+      "author": "@minengenharia",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 8,
+      "title": "Why do we use it?",
+      "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "text": "<h2>Why do we use it?</h2><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>",
+      "author": "@minengenharia",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    },
+    {
+      "id": 9,
+      "title": "Why do we use it?",
+      "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "text": "<h2>Why do we use it?</h2><p>It is a long established fact that a reade.</p>",
+      "author": "@minengenharia",
+      "image": "https://delttatecnologia.com.br/slides-pascoal/mobile-1.jpg",
+      "link": "http://www.imontepascoal.com"
+    }
+  ]
+}

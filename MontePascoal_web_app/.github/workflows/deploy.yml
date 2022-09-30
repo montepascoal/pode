@@ -1,0 +1,93 @@
+name: build
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.4
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.17.4'
+    - name: Install dependencies
+      run: yarn
+      env:
+        CI: true
+    - name: Run tests
+      run: yarn test --watchAll false # executa uma vez e não fica ouvindo e esperando novas alterações
+      env:
+        CI: true
+  build:
+    name: Build Image
+    needs: [tests]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.4
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.17.4'
+    - name: Install dependencies
+      run: yarn
+      env:
+        CI: true
+    - name: Publish to Github Packages Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: Instituto-Monte-Pascoal/MontePascoal_web_app/pode-web-app
+        registry: docker.pkg.github.com
+        username: ${{ secrets.AUTH_USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: Dockerfile
+        default_branch: main
+        tags: latest
+  server:
+    name: Server Settings
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.4
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.17.4'
+    - name: Remove old system in pode-app
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: ${{ secrets.SSH_PORT }}
+        script_stop: true
+        script: |
+          docker stack rm pode_web_app
+          sleep 10
+          docker pull docker.pkg.github.com/instituto-monte-pascoal/montepascoal_web_app/pode-web-app:latest
+  deploy:
+    name: Server Deploy
+    needs: [server]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14.17.4
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.17.4'
+    - name: Deploy package to pode-app
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: ${{ secrets.SSH_PORT }}
+        script_stop: true
+        script: |
+          cat ~/www/key/TOKEN_GH.txt | docker login https://docker.pkg.github.com -u vitorioaraujo --password-stdin
+          cd ~/www/traefik_projects/web/app.pode.app.br
+          docker stack deploy -c docker-compose.yml pode_web_app
